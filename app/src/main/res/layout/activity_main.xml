@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F5F9"
+    android:fillViewport="true"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gyroscope Monitor"
+            android:textColor="#0F172A"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pantau kecepatan rotasi HP pada tiga sumbu."
+            android:textColor="#475569"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvSensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Memeriksa sensor..."
+            android:textColor="#334155"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Status: menunggu"
+            android:textColor="#2563EB"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:text="X: 0.000 rad/s"
+            android:textColor="#DC2626"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:text="Y: 0.000 rad/s"
+            android:textColor="#15803D"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:text="Z: 0.000 rad/s"
+            android:textColor="#2563EB"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMotion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Menunggu data sensor..."
+            android:textColor="#334155"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Jeda"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Cara mencoba:\n\n1. Pegang HP dalam posisi tegak.\n2. Putar HP perlahan ke berbagai arah.\n3. Perhatikan perubahan nilai X, Y, dan Z.\n4. Hentikan gerakan: nilai akan mendekati nol.\n\nNilai yang ditampilkan adalah kecepatan rotasi dalam rad/s, bukan sudut kemiringan."
+            android:textColor="#475569"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</ScrollView>
